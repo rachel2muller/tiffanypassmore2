@@ -1,0 +1,282 @@
+/* CSS Reset */
+
+
+
+
+
+
+
+
+
+
+/*---- Fonts-------
+font-family: 'Dancing Script', cursive;
+font-family: 'Sacramento', cursive;
+font-family: 'Charm', cursive;
+font-family: 'Patrick Hand', cursive; */
+
+/*Color theme
+https://color.adobe.com/Electricity-color-theme-11891262/?showPublished=true  */
+
+
+
+
+
+
+/* ==========================================================================
+                          Body
+   ========================================================================== */
+
+/* Show it is fixed to the top */
+body {
+    min-height: 75rem;
+    padding-top: 4.5rem;
+    background-color: rgb(239, 204, 250);
+  }
+
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+p {
+  text-align: justify;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 20px;
+  color: #60487F;
+}
+
+  /* ==========================================================================
+                            Title and Intro
+   ========================================================================== */
+.title {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  font-size: 100px;
+  text-align: center;
+  color: #4AF8FF;
+  text-shadow: 2px 2px #60487F;
+}
+.title2 {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 400;
+  font-size: 75px;
+  text-align: center;
+  color: #4AF8FF;
+  text-shadow: 2px 2px #60487F;
+}
+.intro {
+  text-align: center;
+  margin: auto;
+}
+
+   /* ==========================================================================
+                              Books and fan-fiction
+   ========================================================================== */
+  
+   .published{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
+   }
+    .fcover {
+     
+      margin-left: auto;
+      margin-right: auto;
+      height: 300px;
+    }
+    .btitles {
+      /* text-align: center; */
+      font-family: 'Charm', cursive;
+      /* margin-left: auto;
+    margin-right: auto; */
+    }
+
+/* ==========================================================================
+                                About ME and Contact
+   ==========================================================================  */
+    .headings {
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* text-align: center; */
+      padding: 25px;
+      font-family: 'Sacramento', cursive;
+      font-size: 40px;
+      font-weight: bold;
+      color: #3D013C;
+      background-color: rgb(231, 214, 236);
+
+    }
+    .tiffany {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 40%;
+      border-radius: 25px;
+    }
+
+    .icons {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+
+
+
+
+
+   /* ==========================================================================
+                         Effects
+   ========================================================================== */
+.view {
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    float: left;
+    border: 10px solid #fff;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+    background: #fff url(../images/bgimg.jpg) no-repeat center center
+}
+.view .mask, .view .content {
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0
+}
+.view img {
+    display: block;
+    position: relative
+}
+.view h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0
+}
+.view p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center
+}
+.view a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000
+}
+.view a.info:hover {
+    box-shadow: 0 0 5px #000
+}
+
+
+
+
+
+
+.view-second img { 	
+	transition: all 0.2s ease-in;
+}
+.view-second .mask { 
+	background-color: hsla(278, 33%, 59%, 0.7); 
+	width: 350px;
+    padding: 60px;
+	height: 350px;
+	opacity: 0;
+	transform: translate(265px, 145px) rotate(45deg);
+	transition: all 0.2s ease-in-out;
+}
+.view-second h2 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background: transparent;
+    margin: 20px 40px 0px 40px;
+    transform: translate(200px, -200px);
+	transition: all 0.2s ease-in-out;
+}
+.view-second p { 
+	transform: translate(-200px, 200px);
+	transition: all 0.2s ease-in-out;
+}
+.view-second a.info { 
+    transform: translate(0px, 100px);
+	transition: all 0.2s 0.1s ease-in-out;
+} 
+
+
+
+
+.view-second:hover .mask { 
+	opacity:1; 
+	transform: translate(-80px, -125px) rotate(45deg);
+}							  
+.view-second:hover h2 { 
+	transform: translate(0px,0px);
+	transition-delay: 0.3s; 
+}
+.view-second:hover p { 
+    transform: translate(0px,0px); 
+	transition-delay: 0.4s;
+}
+.view-second:hover a.info { 
+	transform: translate(0px,0px); 
+	transition-delay: 0.5s;
+}
+
+.picture {
+
+    width: 275px;
+    height: 450px;
+    
+}
+
+.picture2 {
+
+    width: 275px;
+    height: 400px;
+    
+}
+.picture3 {
+
+    width: 275px;
+    height: 400px;
+    
+}
+
+
+   /* ==========================================================================
+                                  Footer
+   ========================================================================== */
+   footer p{
+    text-align: center;
+    padding: 25px;
+   }
+
+   
