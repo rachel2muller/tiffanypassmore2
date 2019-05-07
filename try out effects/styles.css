@@ -95,7 +95,7 @@ p {
       height: 300px;
     }
     .btitles {
-      /* text-align: center; */
+      text-align: center;
       font-family: 'Charm', cursive;
       /* margin-left: auto;
     margin-right: auto; */
@@ -104,12 +104,18 @@ p {
 /* ==========================================================================
                                 About ME and Contact
    ==========================================================================  */
-    .headings {
+    .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    
+  .headings {
 
-      display: flex;
+      display: block;
       justify-content: center;
       align-items: center;
-      /* text-align: center; */
+      text-align: center;
       padding: 25px;
       font-family: 'Sacramento', cursive;
       font-size: 40px;
