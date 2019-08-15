@@ -9,6 +9,8 @@
 
 
 
+
+
 /*---- Fonts-------
 font-family: 'Dancing Script', cursive;
 font-family: 'Sacramento', cursive;
@@ -101,6 +103,65 @@ p {
     margin-right: auto; */
     }
 
+ .border{
+      padding: 5px;
+        background: linear-gradient(110deg, #ffeead 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #C5E7D7 34%, #88d8b0 34%);
+      background-size: 300% 300%;
+      height: 150px;
+      background-position: 25% 25%;
+      -webkit-animation: Gradient 15s ease infinite;
+      -moz-animation: Gradient 5s ease infinite;
+    }
+    .inner-cutout{
+      padding: 30px 0;
+      display: block;
+      background-color:rgb(239, 204, 250);/*rgb (239,204,250)*/
+        
+      margin: 2%;
+      padding-bottom: 40px;
+      height: 125px;
+      background: radial-gradient(rgb(239, 204, 250), #f0b7b5cb);
+       background-size: 300%;
+      background-position:50% 50%;
+    
+    }
+    .knockout {
+  
+      vertical-align: middle;
+      text-align: center;
+      font-family: 'Pacifico', cursive;
+      font-size:50pt;
+      color: blue;
+      color: rgb(235, 57, 190);
+      background: linear-gradient(110deg, #ffadd6 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, rgb(235, 57, 190) 34%, #88d8b0 34%);
+      background-size: 400%;
+       -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      padding-bottom: 25px;
+      /* padding-top: 25px; */
+    }
+    .knockout{
+        animation: Gradient 5s ease infinite;
+        -webkit-animation: Gradient 15s ease infinite;
+        -moz-animation: Gradient 5s ease infinite;
+    }
+    
+    @-webkit-keyframes Gradient {
+      0% {
+        background-position: 30% 50%
+      }
+      50% {
+        background-position: 25% 50%
+      }
+      100% {
+        background-position: 30% 50%
+      }
+      
+    }
+    
+    
+
+
 /* ==========================================================================
                                 About ME and Contact
    ==========================================================================  */
@@ -116,14 +177,18 @@ p {
       justify-content: center;
       align-items: center;
       text-align: center;
+      margin: auto;
       padding: 25px;
       font-family: 'Sacramento', cursive;
       font-size: 40px;
       font-weight: bold;
       color: #3D013C;
       background-color: rgb(231, 214, 236);
+      width: 900px;
 
     }
+
+
     .tiffany {
       display: block;
       margin-left: auto;
@@ -258,20 +323,20 @@ p {
 
 .picture {
 
-    width: 275px;
+    width: 300px;
     height: 450px;
     
 }
 
 .picture2 {
 
-    width: 275px;
+    width: 300px;
     height: 400px;
     
 }
 .picture3 {
 
-    width: 275px;
+    width: 300px;
     height: 400px;
     
 }
